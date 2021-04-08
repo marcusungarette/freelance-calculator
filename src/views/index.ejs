@@ -84,7 +84,7 @@
             <div class="name column"><%= job.name %> </div>
             <div class="deadline column">
               <span>Prazo</span>
-              <p><%= job.remaining %> dias para entrega</p>
+              <p><%= job.remaining <= 0 ? 'Prazo encerrado' : job.remaining + ' dias para entrega'%> </p>
             </div>
             <div class="amount column">
               <span>Valor</span>
